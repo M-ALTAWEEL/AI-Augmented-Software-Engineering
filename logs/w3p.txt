@@ -9,3 +9,27 @@ real	0m47.032s
 user	0m0.296s
 sys	0m0.044s
 ### chain_of_thought
+[PASS] 'Bought 10 days ago, unused, not final sale.' -> YES, expected YES
+[PASS] 'Bought 45 days ago, unused.' -> NO, expected NO
+[PASS] 'Bought 5 days ago but it was a final-sale item.' -> NO, expected NO
+3/3 correct
+
+real	0m47.449s
+user	0m0.326s
+sys	0m0.058s
+### tool_calling
+[PASS] tool called with order_id='4412'
+tool result: shipped, arriving Friday
+
+real	0m29.474s
+user	0m0.292s
+sys	0m0.040s
+### rag
+[PASS] 'How long do I have to return an item?' -> 'you may return most items within 30 days of delivery for a full refund.'
+[PASS] 'Do you ship internationally?' -> 'yes, we offer international shipping to most countries.'
+[PASS] "What's your CEO's home address?" -> "i'm sorry, i don't know the answer to that based on our help center."
+3/3 correct
+
+real	0m27.285s
+user	0m0.295s
+sys	0m0.055s
