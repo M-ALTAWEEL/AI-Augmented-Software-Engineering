@@ -13,30 +13,32 @@ Processing request of type CallToolRequest
 
 ## tools/call search_countries {"query": "guinea", "limit": 5}
 ```json
-{
-  "name": "Guinea",
-  "capital": "Conakry",
-  "region": "Africa",
-  "population": null
-}
-{
-  "name": "Guinea-Bissau",
-  "capital": "Bissau",
-  "region": "Africa",
-  "population": null
-}
-{
-  "name": "Equatorial Guinea",
-  "capital": "Ciudad de la Paz",
-  "region": "Africa",
-  "population": null
-}
-{
-  "name": "Papua New Guinea",
-  "capital": "Port Moresby",
-  "region": "Oceania",
-  "population": null
-}
+[
+  {
+    "name": "Guinea",
+    "capital": "Conakry",
+    "region": "Africa",
+    "population": null
+  },
+  {
+    "name": "Guinea-Bissau",
+    "capital": "Bissau",
+    "region": "Africa",
+    "population": null
+  },
+  {
+    "name": "Equatorial Guinea",
+    "capital": "Ciudad de la Paz",
+    "region": "Africa",
+    "population": null
+  },
+  {
+    "name": "Papua New Guinea",
+    "capital": "Port Moresby",
+    "region": "Oceania",
+    "population": null
+  }
+]
 ```
 
 ## tools/call get_country_details {"name": "Jordan"}
@@ -122,16 +124,20 @@ Processing request of type CallToolRequest
 
 ## tools/call search_countries {"query": "   "}
 ```json
-{
-  "error": "query must not be empty",
-  "error_type": "invalid_input"
-}
+[
+  {
+    "error": "query must not be empty",
+    "error_type": "invalid_input"
+  }
+]
 ```
 
 ## tools/call search_countries {"query": "jor", "limit": 99}
 ```json
-{
-  "error": "limit must be an integer between 1 and 25",
-  "error_type": "invalid_input"
-}
+[
+  {
+    "error": "limit must be an integer between 1 and 25",
+    "error_type": "invalid_input"
+  }
+]
 ```

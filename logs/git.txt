@@ -1,8 +1,8 @@
-f8b45b8 Week 3: prompting techniques (k-shot, CoT, tool calling, RAG)
-96c918c Week 5: Data Explorer MCP server with get_country_details
-4f92741 Week 4: agent-ready link shortener with click counter
-72f08a8 Week 5: note that mcp 2.x breaks the FastMCP starter
+92c41b4 Week 3: prompting techniques (k-shot, CoT, tool calling, RAG)
+e81a8f6 Week 5: Data Explorer MCP server with get_country_details
+d60ba3f Week 4: agent-ready link shortener with click counter
+73dfe82 Week 5: note that mcp 2.x breaks the FastMCP starter
+e713480 Add files via upload
+64d4601 logs
 3852890 Add files via upload
 62374ce logs
-cbd8832 logs
-ad354bd logs

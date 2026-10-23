@@ -1,15 +1,2 @@
-
-    def _search_v5(query: str, key: str) -> tuple[list[dict] | None, dict | None]:
-        status, data, err = _http_get_json(V5_URL, params={"q": query}, headers={"Authorization": f"Bearer {key}"})
-        if err:
-            return None, err
-        if status == 404:
-            return [], None
->       objects = (data or {}).get("data", {}).get("objects") if isinstance(data, dict) else None
-                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-E       AttributeError: 'NoneType' object has no attribute 'get'
-
-server.py:105: AttributeError
-=========================== short test summary info ============================
-FAILED test_server.py::test_v5_unexpected_shape - AttributeError: 'NoneType' ...
-1 failed, 37 passed in 1.88s
+......................................                                   [100%]
+38 passed in 1.70s
