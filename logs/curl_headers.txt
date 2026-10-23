@@ -1,0 +1,30 @@
+HTTP/2 301 
+date: Fri, 23 Oct 2026 14:29:23 GMT
+content-type: text/html; charset=UTF-8
+location: https://files-03.restcountries.com/countries.00/legacy.json?fields=name,capital
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=OkpD6ZcKuHRAe6enqUvVyfYfN7enU%2BHGWykTVARVFiNc5a8CS2orne0VlhW7966SJrsOG7kIKAFtDosF24fkmLgpEaXgKOjNi9J6fANEA1E8kmNmsBcWFD366O8TKg3jOmYkrg%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+server: cloudflare
+cf-ray: a4f16f05bc1fc891-AMS
+
+HTTP/2 200 
+date: Fri, 23 Oct 2026 14:29:23 GMT
+content-type: application/json
+content-length: 261
+last-modified: Mon, 13 Jul 2026 00:19:02 GMT
+x-amz-server-side-encryption: AES256
+accept-ranges: bytes
+server: cloudflare
+etag: "6938e4853cd51623f62e76953d47dc36"
+x-cache: RefreshHit from cloudfront
+via: 1.1 094c057a1a1a6de6fdb285ef6f030916.cloudfront.net (CloudFront)
+x-amz-cf-pop: AMS56-P1
+x-amz-cf-id: jQHKtCL0DyHQvRH3pNAJ9axLKogOX5jH-4n60CDKfGvEN2OKP19yhQ==
+age: 70158
+cache-control: max-age=14400
+cf-cache-status: HIT
+report-to: {"group":"cf-nel","max_age":604800,"endpoints":[{"url":"https://a.nel.cloudflare.com/report/v4?s=ww4FKRMSP61RbsUd3ihWCC8hJOh7%2BWx%2BRgpYAZ4GFnr8gA260OQ%2FkczMHHOEPgNAPiE%2BSeUDOZ938vzJrU8XbnR2pPRuOEpEIQw7DgzYfp7aYnf8Gdhy2GcOmN3oq%2BkABOpCuQre%2B7SQTnPa4w%3D%3D"}]}
+nel: {"report_to":"cf-nel","success_fraction":0.0,"max_age":604800}
+cf-ray: a4f16f063c121c81-AMS
+alt-svc: h3=":443"; ma=86400
+
