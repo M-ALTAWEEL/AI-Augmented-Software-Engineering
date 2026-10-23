@@ -1,0 +1,971 @@
+{
+  "responderUsername": "GitHub Copilot",
+  "initialLocation": "panel",
+  "requests": [
+    {
+      "requestId": "request_9c0e827e-c46a-4a58-9bb6-238207458d3c",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 148
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 149
+            },
+            "text": "Using only the data-explorer MCP tools: first find which countries match \"guinea\", then get the currencies, languages, neighbors and flag of Jordan.",
+            "kind": "text"
+          }
+        ],
+        "text": "Using only the data-explorer MCP tools: first find which countries match \"guinea\", then get the currencies, languages, neighbors and flag of Jordan."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "mcpServersStarting",
+          "didStartServerIds": []
+        },
+        {
+          "kind": "autoModeResolution",
+          "resolved": {
+            "id": "gpt-6-luna",
+            "name": "GPT-6 Luna"
+          }
+        },
+        {
+          "value": "سأستخدم أدوات data-explorer فقط: أبحث أولًا عن الدول المطابقة لـ «guinea»، ثم أطلب تفاصيل الأردن المحددة.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/workspaces/AI-Augmented-Software-Engineering/",
+            "scheme": "vscode-remote",
+            "authority": "codespaces+animated-goldfish-6v466jj4q67h57gv"
+          }
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": "",
+          "isConfirmed": {
+            "type": 1
+          },
+          "isComplete": true,
+          "source": {
+            "type": "internal",
+            "label": "Built-In"
+          },
+          "toolCallId": "call_26nJlihD5fQsiDsNFkLf3t5p",
+          "toolId": "tool_search"
+        },
+        {
+          "kind": "thinking",
+          "value": [],
+          "id": "VLSAUDvXMFfEutp/hSLerg1ffKeYT4+QC5nslovBu+RBAxgxemy0gOBUHz+Vmmv9sSva5GCGCeiAllMdJuaPV4190lXNQrvirCuiN1deq+ehJdQYB0g92XJw1PaETCWKZYfcB4O8WDCp62fz8JKayB7LL+/tXCYSRsdvWQFb9jR4IH6a2b5t2DkyZO7X8nNtwJTGY52MjT41bKju969obm4sX/wvLKONTAT9do7+CrIyEo29g9fDVdRBEeOI3G0zzzOho3gWew8fAVW8r0UFRRWa1IY3INdVDnd2kiwPAJrdqkNKkkfySTqQpwicoiBlh5lB3jDQh7OytSXe5Dv4FlWd2TaWXV/QB+3A8ukqk+pjqYnA/Mt3aBqKsHKuuN7Xvs0ImbSo03YixTtsA+OzEyxApcfIsddBh/F+JCIDQME7Qow6DjderZR2PRvYnceS094hpYFCUj2V4lwpgVACpxRx4f2k61de16r0MDvy6UU="
+        },
+        {
+          "kind": "thinking",
+          "value": "",
+          "id": "",
+          "metadata": {
+            "vscodeReasoningDone": true,
+            "stopReason": "other"
+          }
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "جارٍ تنفيذ `search_countries`",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "pastTenseMessage": {
+            "value": "تم تنفيذ `search_countries` ",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "originMessage": "data-explorer (خادم MCP)",
+          "isConfirmed": {
+            "type": 4
+          },
+          "isComplete": true,
+          "source": {
+            "type": "mcp",
+            "serverLabel": "data-explorer",
+            "label": "data-explorer",
+            "collectionId": "mcp.config.ws0",
+            "definitionId": "mcp.config.ws0.data-explorer"
+          },
+          "icon": {
+            "id": "tools"
+          },
+          "resultDetails": {
+            "input": "{\n  \"query\": \"guinea\",\n  \"limit\": 10\n}",
+            "output": [
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "{\n  \"name\": \"Guinea\",\n  \"capital\": \"Conakry\",\n  \"region\": \"Africa\",\n  \"population\": null\n}"
+              },
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "{\n  \"name\": \"Guinea-Bissau\",\n  \"capital\": \"Bissau\",\n  \"region\": \"Africa\",\n  \"population\": null\n}"
+              },
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "{\n  \"name\": \"Equatorial Guinea\",\n  \"capital\": \"Ciudad de la Paz\",\n  \"region\": \"Africa\",\n  \"population\": null\n}"
+              },
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "{\n  \"name\": \"Papua New Guinea\",\n  \"capital\": \"Port Moresby\",\n  \"region\": \"Oceania\",\n  \"population\": null\n}"
+              },
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "{\n  \"result\": [\n    {\n      \"name\": \"Guinea\",\n      \"capital\": \"Conakry\",\n      \"region\": \"Africa\",\n      \"population\": null\n    },\n    {\n      \"name\": \"Guinea-Bissau\",\n      \"capital\": \"Bissau\",\n      \"region\": \"Africa\",\n      \"population\": null\n    },\n    {\n      \"name\": \"Equatorial Guinea\",\n      \"capital\": \"Ciudad de la Paz\",\n      \"region\": \"Africa\",\n      \"population\": null\n    },\n    {\n      \"name\": \"Papua New Guinea\",\n      \"capital\": \"Port Moresby\",\n      \"region\": \"Oceania\",\n      \"population\": null\n    }\n  ]\n}",
+                "audience": [
+                  0
+                ]
+              }
+            ],
+            "isError": false
+          },
+          "toolSpecificData": {
+            "kind": "input",
+            "rawInput": {
+              "query": "guinea",
+              "limit": 10
+            }
+          },
+          "toolCallId": "call_RRpD0Il3xYpnjqqCoQRA7ZVB",
+          "toolId": "mcp_data-explorer_search_countries"
+        },
+        {
+          "value": "تُظهر نتائج البحث أربع دول مطابقة. أستخرج الآن حقول العملات واللغات والحدود والعلم للأردن.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/workspaces/AI-Augmented-Software-Engineering/",
+            "scheme": "vscode-remote",
+            "authority": "codespaces+animated-goldfish-6v466jj4q67h57gv"
+          }
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "جارٍ تنفيذ `get_country_details`",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "pastTenseMessage": {
+            "value": "تم تنفيذ `get_country_details` ",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "originMessage": "data-explorer (خادم MCP)",
+          "isConfirmed": {
+            "type": 4
+          },
+          "isComplete": true,
+          "source": {
+            "type": "mcp",
+            "serverLabel": "data-explorer",
+            "label": "data-explorer",
+            "collectionId": "mcp.config.ws0",
+            "definitionId": "mcp.config.ws0.data-explorer"
+          },
+          "icon": {
+            "id": "tools"
+          },
+          "resultDetails": {
+            "input": "{\n  \"name\": \"Jordan\"\n}",
+            "output": [
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "{\n  \"name\": \"Jordan\",\n  \"official_name\": \"Hashemite Kingdom of Jordan\",\n  \"capital\": \"Amman\",\n  \"region\": \"Asia\",\n  \"currencies\": [\n    {\n      \"code\": \"JOD\",\n      \"name\": \"Jordanian dinar\",\n      \"symbol\": \"د.ا\"\n    }\n  ],\n  \"languages\": [\n    \"Arabic\"\n  ],\n  \"borders\": [\n    \"IRQ\",\n    \"ISR\",\n    \"PSE\",\n    \"SAU\",\n    \"SYR\"\n  ],\n  \"flag_url\": \"https://flagcdn.com/w320/jo.png\",\n  \"flag_emoji\": \"🇯🇴\",\n  \"source\": \"mledoze/countries (no API key set)\"\n}"
+              }
+            ],
+            "isError": false
+          },
+          "toolSpecificData": {
+            "kind": "input",
+            "rawInput": {
+              "name": "Jordan"
+            }
+          },
+          "toolCallId": "call_t8ZZsxM8BgqiST8weamMKtch",
+          "toolId": "mcp_data-explorer_get_country_details"
+        },
+        {
+          "value": "- **الدول المطابقة لـ «guinea»**: غينيا، غينيا بيساو، غينيا الاستوائية، بابوا غينيا الجديدة.\n- **الأردن**:\n  - العملة: الدينار الأردني (JOD)، رمزه د.ا\n  - اللغة: العربية\n  - الدول المجاورة: العراق، إسرائيل، فلسطين، السعودية، سوريا\n  - العلم: 🇯🇴 [عرض العلم](https://flagcdn.com/w320/jo.png)",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/workspaces/AI-Augmented-Software-Engineering/",
+            "scheme": "vscode-remote",
+            "authority": "codespaces+animated-goldfish-6v466jj4q67h57gv"
+          }
+        }
+      ],
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.71.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "compact",
+            "description": "Free up context by compacting the conversation history. Optionally include extra instructions for compaction."
+          },
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works"
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "create_tests",
+                "description": "The user wants to generate unit tests.",
+                "examples": [
+                  "Generate tests for my selection using pytest."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+          },
+          {
+            "name": "new",
+            "description": "Scaffold code for a new file or project in a workspace",
+            "sampleRequest": "Create a RESTful API server using typescript",
+            "isSticky": true,
+            "disambiguation": [
+              {
+                "category": "create_new_workspace_or_extension",
+                "description": "The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets",
+                "examples": [
+                  "Scaffold a Node server.",
+                  "Create a sample project which uses the fileSystemProvider API.",
+                  "react application"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "newNotebook",
+            "description": "Create a new Jupyter Notebook",
+            "sampleRequest": "How do I create a notebook to load data from a csv file?",
+            "disambiguation": [
+              {
+                "category": "create_jupyter_notebook",
+                "description": "The user wants to create a new Jupyter notebook in Visual Studio Code.",
+                "examples": [
+                  "Create a notebook to analyze this CSV file."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "setupTests",
+            "description": "Set up tests in your project (Experimental)",
+            "sampleRequest": "add playwright tests to my project",
+            "when": "config.github.copilot.chat.setupTests.enabled",
+            "disambiguation": [
+              {
+                "category": "set_up_tests",
+                "description": "The user wants to configure project test setup, framework, or test runner. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Set up tests for this project."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": []
+      },
+      "timestamp": 1792766301860,
+      "modeInfo": {
+        "kind": "agent",
+        "isBuiltin": true,
+        "telemetryModeId": "agent",
+        "telemetryModeName": "agent",
+        "permissionLevel": "default"
+      },
+      "responseId": "response_a907ae6c-fa24-4109-8c02-9fc848b63df2",
+      "result": {
+        "timings": {
+          "firstProgress": 11662,
+          "totalElapsed": 49352
+        },
+        "metadata": {
+          "codeBlocks": [],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<context>\nThe current date is 2026-10-23.\nTerminals:\nTerminal: bash\n\n</context>\n<reminderInstructions>\nYou are an agent—keep going until the user's query is completely resolved before ending your turn. ONLY stop if solved or genuinely blocked.\nTake action when possible; the user expects you to do useful work without unnecessary questions.\nAfter any parallel, read-only context gathering, give a concise progress update and what's next.\nAvoid repetition across turns: don't restate unchanged plans or sections (like the todo list) verbatim; provide delta updates or only the parts that changed.\nTool batches: You MUST preface each batch with a one-sentence why/what/outcome preamble.\nProgress cadence: After 3 to 5 tool calls, or when you create/edit > ~3 files in a burst, report progress.\nRequirements coverage: Read the user's ask in full and think carefully. Do not omit a requirement. If something cannot be done with available tools, note why briefly and propose a viable alternative.\n\nIMPORTANT: Before calling any deferred tool that was not previously returned by tool_search, you MUST first use tool_search to load it. Calling a deferred tool without first loading it will fail. Tools returned by tool_search are automatically expanded and immediately available - do not search for them again.\n\n</reminderInstructions>\n<userRequest>\nUsing only the data-explorer MCP tools: first find which countries match \"guinea\", then get the currencies, languages, neighbors and flag of Jordan.\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "renderedGlobalContext": [
+            {
+              "type": 1,
+              "text": "<environment_info>\nThe user's current OS is: Linux\n</environment_info>\n<workspace_info>\nI am working in a workspace with the following folders:\n- /workspaces/AI-Augmented-Software-Engineering \nI am working in a workspace that has the following structure:\n```\nREADME.md\nassignments/\n\t01-setup-environments/\n\t\tassignment.md\n\t02-specs-driven-development/\n\t\tassignment.md\n\t03-anatomy-of-coding-agents/\n\t\tgemini-cli-dissection/\n\t\t\tassignment.md\n\t\t\twriteup.md\n\t\t\tstarter/\n\t\t\ttools/\n\t\tprompting-techniques/\n\t\t\tassignment.md\n\t\t\tstarter/\n\t04-agentic-codebase-structure/\n\t\tassignment.md\n\t\tstarter/\n\t\t\tmain.py\n\t\t\tREADME.md\n\t\t\trequirements.txt\n\t\t\ttest_main.py\n\t\t\tdocs/\n\t05-advanced-context-management/\n\t\tassignment.md\n\t\tstarter/\n\t\t\tREADME.md\n\t\t\trequirements.txt\n\t\t\tserver.py\n\t\twork/\n\t\t\tREADME.md\n\t\t\trequirements.txt\n\t\t\t...\n\t06-agentic-code-review-and-testing/\n\t\tassignment.md\n\t\tstarter/\n\t07-agent-orchestration/\n\t\tassignment.md\n\t\tstarter/\n\t08-security-in-the-age-of-ai/\n\t\tassignment.md\n\t\tstarter/\n\t09-software-factory-and-the-future/\n\t\tassignment.md\n\t\tstarter/\n\t10-ai-native-engineering-teams/\n\t\tassignment.md\n\t\tstarter/\nlectures/\n\tREADME.md\n\t01-setup-environments/\n\t\tREADME.md\n\t02-specs-driven-development/\n\t\tREADME.md\n\t03-anatomy-of-coding-agents/\n\t\tREADME.md\n\t04-agentic-codebase-structure/\n\t\tREADME.md\n\t05-advanced-context-management/\n\t\tREADME.md\n\t06-agentic-code-review-and-testing/\n\t\tREADME.md\n\t07-agent-orchestration/\n\t\tREADME.md\n\t08-security-in-the-age-of-ai/\n\t\tREADME.md\n\t09-software-factory-and-the-future/\n\t\tREADME.md\n\t10-ai-native-engineering-teams/\n\t\tREADME.md\nresources/\n\tcse115a-sprint-task-specifications.md\n\tREADME.md\n\t01-setup-environments/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t02-specs-driven-development/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t03-anatomy-of-coding-agents/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t04-agentic-codebase-structure/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t05-advanced-context-management/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t06-agentic-code-review-and-testing/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t07-agent-orchestration/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t08-security-in-the-age-of-ai/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t09-software-factory-and-the-future/\n\t\tpapers-to-read.md\n\t\tREADME.md\n\t10-ai-native-engineering-teams/\n\t\tpapers-to-read.md\n\t\tREADME.md\n```\nThis is the state of the context at this point in the conversation. The view of the workspace structure may be truncated. You can use tools to collect more context if needed.\n</workspace_info>\n<userMemory>\nNo user preferences or notes saved yet. Use the memory tool to store persistent notes under /memories/.\n</userMemory>\n<sessionMemory>\nSession memory (/memories/session/) is empty. No session notes have been created yet.\n</sessionMemory>\n<repoMemory>\nRepository memory (/memories/repo/) is empty. No workspace-scoped notes have been created yet.\n</repoMemory>\n<availableDeferredTools>\nAvailable deferred tools (must be loaded with tool_search before use):\ncopilot_getNotebookSummary\ncreate_and_run_task\ncreate_directory\ncreate_new_jupyter_notebook\ncreate_new_workspace\nedit_notebook_file\nget_task_output\nget_vscode_api\ngithub-pull-request_create_pull_request\ngithub-pull-request_currentActivePullRequest\ngithub-pull-request_doSearch\ngithub-pull-request_issue_fetch\ngithub-pull-request_labels_fetch\ngithub-pull-request_notification_fetch\ngithub-pull-request_pullRequestInViewport\ngithub-pull-request_pullRequestStatusChecks\ngithub-pull-request_resolveReviewThread\ngithub_repo\ngithub_text_search\ninstall_extension\nmcp_data-explorer_get_country_details\nmcp_data-explorer_search_countries\nread_notebook_cell_output\nresolve_memory_file_uri\nrun_notebook_cell\nrun_vscode_command\nterminal_last_command\nterminal_selection\ntestFailure\nvscode_searchExtensions_internal\n</availableDeferredTools>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "cacheKey": "file:///workspaces/AI-Augmented-Software-Engineering",
+          "promptTokens": 18761,
+          "outputTokens": 114,
+          "toolCallRounds": [
+            {
+              "response": "سأستخدم أدوات data-explorer فقط: أبحث أولًا عن الدول المطابقة لـ «guinea»، ثم أطلب تفاصيل الأردن المحددة.",
+              "toolCalls": [
+                {
+                  "id": "call_26nJlihD5fQsiDsNFkLf3t5p__vscode-1792766299185",
+                  "name": "tool_search",
+                  "arguments": "{\"query\":\"MCP data explorer tools to search countries by name and get country details\"}"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "8d18dd37-27ce-473e-97b7-60b8b5adc288",
+              "statefulMarker": "4ZLtD9uBoTOdLWW/cfPM3vN97zPzVwRnwdRBTLQohjR928DQ2Ur1BiDlp23AGakSSkStx0pcN2pmOFvTwQM57mzLK+qkBHU7PDV1yejnsCjYJLVfqcDecYyngF9sr4B9AkvmvpqkglVEw5F6B5EGUwp6YBMBPMgrVN8sU9WawQ33PO77KCtzXvDdMUR+9oIa/MiVHlhYJjRKZZxzWbG5VpYahvH9ZYuRfNHU/DJ1iVf+YdLwuuQRiz9qZFA5wdta8n19S3MCdH0NpKd/Z5iSaswhDIu/wdwtkp9GLsKukFbhgd6MUVBsvA8M83iqj+jYHA6khFrIfDGHsrXxT6/knHuemWX3HzzOI6//febyP6WeXlnBzjAwGoJa6ypOgLO5cuS6yKemI8f8Gu3tk7JXZmztVSof+7G60KryaDBaJuEqxyhNCfSVBKIeKhq0NxI9C3ehejkpXiUyJdhJywsonsDqpBvgd66jeIKWMuzBfLvkiw==",
+              "timestamp": 1792766318648,
+              "phase": "commentary",
+              "modelId": "gpt-6-luna",
+              "originApi": "responses"
+            },
+            {
+              "response": "",
+              "toolCalls": [
+                {
+                  "id": "call_RRpD0Il3xYpnjqqCoQRA7ZVB__vscode-1792766299186",
+                  "name": "mcp_data-explorer_search_countries",
+                  "arguments": "{\"query\":\"guinea\",\"limit\":10}"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "a7eda29e-c936-4434-a6ce-7c7e9ed404a6",
+              "statefulMarker": "7vO8bVpwR2eLZgIWsmExpp48MOSRrskbD+hIJM3OgxWtiF+6aUIME0vB69sX8IsWfdFO1I/Pk8NQs6J0FSUypBOx94ZkS0Y5jrRa/p7wgNNW4jcRG/qJdne95NrEBcfrSscuZguMRoLSOJD4RVo5hKY7wmCtj9ZyZaah3ebDHOFvgDp9qoa5Ny/eq3ubH1X4dJ//uklTYE1P8cN6yYAH85N+jY60h6WFCP+WnuZ0RCsQgngBPqZN5aNp0uQWKZvgo2j0Wlu8O9QSoE+ZBz1fkP0BkZsSca3Ab/rDaGufqgpDCFaERyK6Af7M3m1usWWvjCA6Bioj+spGBn3af90ohKVXSnmH2A89KSeDroP4tHUz0x/CZTorr0o6sCTcXEx+etmD5wJ1rww07nhhbRE2k0XwEBc+YXgOrmhClz3SP6WHmzVV+Y/fF4OS1iMUKl8B2Z5dCAb0xl2RwkSKvSlN/FQAMZHZhwGSSxyarTBdWRIpeg==",
+              "thinking": {
+                "id": "VLSAUDvXMFfEutp/hSLerg1ffKeYT4+QC5nslovBu+RBAxgxemy0gOBUHz+Vmmv9sSva5GCGCeiAllMdJuaPV4190lXNQrvirCuiN1deq+ehJdQYB0g92XJw1PaETCWKZYfcB4O8WDCp62fz8JKayB7LL+/tXCYSRsdvWQFb9jR4IH6a2b5t2DkyZO7X8nNtwJTGY52MjT41bKju969obm4sX/wvLKONTAT9do7+CrIyEo29g9fDVdRBEeOI3G0zzzOho3gWew8fAVW8r0UFRRWa1IY3INdVDnd2kiwPAJrdqkNKkkfySTqQpwicoiBlh5lB3jDQh7OytSXe5Dv4FlWd2TaWXV/QB+3A8ukqk+pjqYnA/Mt3aBqKsHKuuN7Xvs0ImbSo03YixTtsA+OzEyxApcfIsddBh/F+JCIDQME7Qow6DjderZR2PRvYnceS094hpYFCUj2V4lwpgVACpxRx4f2k61de16r0MDvy6UU=",
+                "text": [],
+                "encrypted": "aNnimmgd6NyVr7KUaauspu7iEeHQo3zoDkn30uJQoj8M4EIKPN2ZaO0mO9BFFvqPLS0Cpjwcrzc9+hm0rEWva3buHsKgfxxavVMIPkcFY+g9RHuS7GzjNYycz4B+4VW3rLUfQm8glLmMDvNhfXYEPSzNdq8lUcPcukL6874yMhsNCBkiTyw9mz/VTovPSD0ETBZNp0BDNfW1BxTgtcMM/JE6UC1vyNerbbfz9pY5n+Q3zekYZu/zN/MdXvb4lYKD4T4ii71m2P3cU/Pv2sgh19lOj3jtgmXxFbYJGtS3Se6XKRx6ArXtgOLt+TV0x5CJmRJ4GOztMPP/t6/Yhyft2DAcKIuIAcBFw6Evyy2NpgEeJ6DJTEk9L607GCYIt4NN83+E1SxMsLtGtLK2wDvXjldAGVGMNMZkbUNHcgc4/iQNUTULnuhWW0ibZE3ZFxxBmKjs4n4Wh2BkvBnjMBd8TFUk1eGbxlcIOU1Kx7TvTlwJPHFj5EC62QuvJf927QDPuZT4wZNT9EYb08YwlxFTVojqitOovQunlCc8TFeTzE/zuimhHcSCnjDf/2q2GNRspcBF6pgz7Lw4j0oL0AP5vPYq/4jyDvL9pbbj30eA7j7AABlj5oEqkVXU3yZGtutkp/F+6EfesDw06Ymr+FOLV7YSTzb/j5LiANwrtUjm0LNac1hapaEQANUYtIbDaPHMrec8x8C7WhqjDGm+Hwe7zl9bdnZXc62QqVFP9ykLkJ8ji/lL9RxgnCrDU4OgHeFyrfi0urOorW5pRPssa/L8JpvQ3t+ZE5NiPwm45rG3Ob027VdTOohTnsTNBxjK1AarZrTuZPdS9MNFg+Ba22sLlBGnTOIEWy9AQnvXR5z6pYLQovhsm8mEKqJCtkpi5axEALsQGpQMOboxxkDx/HJ6SLgusCiW6h4/U9bwAKQYDdvR57Eoyer76Zhh6VuJ3bmHhObL8fskUoBJYwPUvg2qwoGydb+fyG4g5w41XuhRb6vy+w7jvu9OcY0NtUwSO62cAW+17zcZkcrKLi6tmJN6X34S/2Ek4NIOTXNLahRVpPtoAYBIfyROssOM5sX7DAnm7/ptjBRWfpZ61FEM9bmTG/pxfqdOlY7eijKKjKaLor9jzH3PoFJgOYWi5SNyCBcKJ6zz2GyWFgVFc+d7yLlZJ6QFZS5vve999GyCUWkLYxPUnYVXcaKXbLcFwAHpMGEgcu488HgUCMXJyqK9QiVG9IEKM+hPnLElKOcMfti376zU/jN6VjNEGdFI3zyN5MbcmRM8Sbiq0cI7fLPPZYqFJmfDtMmxB/7Jt/5An3+MvvsTcZO5mtQqovWLI8IjgOATXZ++I1JDr2f0zvF1P5y2wTRx1gYTNKZMfMm+9B7Dv0Jse4ScjUwrBZAnlnfXEKmbny0HVjFuAOc+KgW5GidMcMYAdScXysOcdnLdWPy41MUMukLZ0C5NfHozOMSSAOYQPIHq43Eg+wYoj86gapB2b+Mz753aEFLBI3uiiS90+yp7Z314aOKfUK7v3o+3Z4MeH+oNsGkTUP+0KwtgGjGMp1g1VkHf/JC1RCn/iZnupPBLyFtF9bpo3SxNdlovxZdljhHnOWIr07AJ9gjM4fyZSJ6vVkz7cNZbOjhB/lY6uNRQe0kqjMeQuAuLVoHJ5n3Vkt+u3siCTs5FvkjLPPgp8kTtrGFwFlUXTT+/rM0oF3q9lDb2ngnRvgWZBpBxhZLTim7U4GqNfbdWx13Y4byWpAJ6eNE2032EgSnkwSyd83tmjpvzmju/B7XZQyhLIutQhDb685mVAst1A3yVNBgPB/ZLTEMFQJZe+AQSAW1pvp85rBcEh/QVleTAPQHwbIi0NY8qYx5SSDRGoNw2PdIB1+y8Brf0T4nihOe1rhNtTCBQ2d1hhDCh0k7/e9scdSbQP6sPE686xJU6em+jNkFvFPkPROpDgXeetMf2i1BNOQPIKcrD767uF4gq7Z5ma8JTzS6Zql6o3T6RZDW1hCxevO5jNlb02gPbyJFumO12GR+W1vWFQznwXblWXVr69VQqJ9GBco9QafGQ0ZqlrUs7pmsOGwbApwANzSDDba7277Cpdvvr/OoaSll95gWD61vE8bXFAa3SxdvhL87G31U8gLjf6OkNJBd21ERX58et72YUE6oCkHkbTTdAv+ZNLcZVDJuMVUtyrxNT1Uh9sDCKWk9nVn8RAp/GkHkapAawJypTyoQdsEOrRbmeYe3aB7Dq3PEkfYiTvWMd+pVscjnijHs2w+KDleuF5xkkJDvDC2ZV+gGZ/6hnRonkBgnHvNF00u7Gge71QVQBxcaVerUCSbfWexomjKp3L9KER+x8+AcFrzSJM9nMi9HYs7mf5pnUkLgja4XMjfnVCJx5ilnLnNXMMFYq9QuzgW0hMezxPG92N1Mnnh1HXBCCnA4usU3zaeBE8a3zLPrIgaIVe/iWDBp/Xqyyp6ZTZgxYPUqdbNSR3TPl8ggefluaLQJyayFVfHN8h/nCBfT8Y8E9464qw9aWgR5T/Ta4neh0Xb+SWyoa8TV7fNo+qET0SKrek+aAmqNNWde/XEezULqrcXES32XmO5tgJ3GvlzVtX+/8oaaDkyoCocM3ddZG+omc2raU8TUfEHMHrZW5C4AeWazUFR262AzDGTHpzp+PJExUXs+EksxkDP7e9ygsi7vjc71keyIaF6Py5mS1QMI3TVZcrQwJEbj0DlekEMoNlROQvFP7iouemK/eO70H1ymDXS2+EZY6mu9oCBpDlbiSc1fdsw+JYlCsqMLZbtgA7S2AuHcQVLF+X7b+40nLtp6j8PYg+by01Vv5yZVxa60ks+VDx00dR2IfW/E1BZaJ8vU7fQOcmSr0mj+GS3x9RUD9/xIg4NOqwj3AcODJoo4SwktRmRRP+I7PlEVnjJoI0fngd7seRp9Wer7DnZW1GdhXs2v/ajBHJ8/PCokCIWHLGWRLeqR0UwffSE13y8cd6A1dMyHF/aDNLsX6LyQkeRp14qOzGREl/SjLrrVf4bYhXtKyuZw9V1spU6DhbhSFWTr3tanGHiVvY5Wo0JlOtAlr7ObeI6QAv/6mCj+cvOmbJ3GvbDp18RDGDZFYequ986+aCqT/LHNUCS11pnoPZtH/4+jQh9I/bTUQQ6hR7iVH3NBlK+TPTpBmORdNH61qAlFH9DLfAAEO/tJ5rGREUPSXQVW5dOTjnOyKOYNIQltiq30IpRppOYL88V/7X7csus9psKHjyImQ4odFNhK+damUl/CAtpO3AA0Qok34ghmEGcBDVwG+BNrDUdvLOUenPoddHQ3MV4T7cQs8FjYVYNUBshNnyHtIvxKsJxjPTqZElPl85eZ9H8e2mLt5U22ZwiebKNmoKyrf6nQZGfWwIFckSb8DvKpFQbLjt8CgGzG+h8k9aWpYs6/LL1TiVXfqR0gP/IMsIhon8T8r1rVEwYPL4M2X44Q8KWCQ4JBbHq1xuYu7+K4WD0t45aezXHijInGQQvQveck0lunGLozX+o276sNvPL/lpidpOd7ivFIxbSjAPF5GZM1ZR7YB9zedOA2zpGExJhaEgyokggX1iGpYfBoD9CZPPbUjZOJSAtHQBxhyBq3gGmxjefhhuw+BoSpx/Utagpx+BYADcoToyJiaU6+nQWhkgeJvganBr5c/MDdbVmqG6Gvtw190sDloKw8vAyUrr1q/p9Atba8svQ6yEK1UK9V6Wm1fmyVnOR5EqlsNHAQmADpnezYyUtltW1PyCqlBilcm1uG0B+inpMOtnH6r5bG6iQIdZi7xf/QPI8GDAs4sjJhYH9PgjZDYcMtKYXKRFHYuoNQTpUdNY2ESJGWu80GzIGuUeS0M4lizmQZDQnkU+aoF20Fc8kCd8bxznolxNq0C4AqI52o8uxF750fVvEgc0TU2md6cLGFdXu1bn/MSmzn0Oyna3wIC/e9WGHnhioRB+/XiOwpmxTR1UGWkWNmgITm0934OLKpTHiE0KPxsSN1pW1K2za8/GqD7CfW1X7H72cwe7v9zgBou9gv+1IyLRoW3uq7+vK/ov+wmgLNhQ4F63Pg4lYar3ZG6Q/AqHjaEz9kMDZ2WF7DpeBVHWqAebdXDkyVgmuks6a4OwfNehwkMyOe3Af8LooKB7gAIbYZAKU2rGQSXbU2Mv8vw0NCB+DPD3fb5bFnmY3TPi39i5y2sOjec902ON9PV2slQFP2/AR3Ghl4j+ao0qn4sHeICw97PKl7qotpd7A7Aq7IuIagC9NP06ua3mPDYBeHQdZD0H9/uY7Z2zNrVboRaRt2dCB5seykL8TXEUhfkH8dEa3MEObRF7GZn3wir4POXaeR5Z2i4R2uhhl9soiqCmGXiXo4nxkPdwDwvXRJXypvd92utlWpCuBF8P4vs4eTWbCaGBksSwWwN7TdKHBdQoX4N7TLTULxH69hAx3sDENH696TtUgAQ30ZNp9DvquNoyBp5CG41KclNyMgSLMR3ItR3DO8XF22zc+FifZhTCT1E3IgTgSf7T6QT7EcjKK7xfwGkCoSVDWl8AB2KF4h9e5EdZ5uGeaw+i7Yj3UU3wl1JElWORYSMEMQNDSyAVfjWDjyJ57gEmOcHEW3p8wdt6riCsk7E3kPLS7+Mb0xiwsBpGqPKzlU/Z0SOnIPp7Kq4bJt1DIb9OYwHWpjAW3D9eQ6eAHGzBwQV7hlLNF0mivsOsLmPaDPAadm8Hy0d4R9HWGVs6pj9H46DqHOmu8ETT684k7mEZglzihgZjhpQ2Z27V1s8jYqseqxUh1qeHijuQzCG5yi+APuqy3Q54l1CWh1JmzuJbHdKM+hD7ytLVCBHyLquwRCcpnL+NibJIH2SCZDk6FKaHfMTaIiPmh8jCs1Ik7sD+lqXCgRF3sspeKon7TlyEhL3bCqOrRKOHy2rsMTA2n263XqhU/XkebXorH82TDZcwLytE2qBCz6mU1UpcgzpmJ2ig6iRQypd9VKXSk9L6yd4GLeB69kfoQJ8cpPdKymZI2hFEqrLokkdRkRx1AknH07ihKmj++s7ow0MtMCRNx8fTeed7IXNe5ByiRa33U5OIPnnPa+kFuul60BS2s/5DxUOu15m7Qz03f4cM2GeMX1Bi10SK9xkHsexDQjrMeR+AX7Capwya8sQJisrUMXBt/H2IcnZpKJpNY/muKSc4GWdm5oABdPoLdqL2zJI499jKcAuWW1FKFoFGvjq",
+                "tokens": 24
+              },
+              "timestamp": 1792766327785,
+              "modelId": "gpt-6-luna",
+              "originApi": "responses"
+            },
+            {
+              "response": "تُظهر نتائج البحث أربع دول مطابقة. أستخرج الآن حقول العملات واللغات والحدود والعلم للأردن.",
+              "toolCalls": [
+                {
+                  "id": "call_t8ZZsxM8BgqiST8weamMKtch__vscode-1792766299187",
+                  "name": "mcp_data-explorer_get_country_details",
+                  "arguments": "{\"name\":\"Jordan\"}"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "336384b2-d934-45b7-a3a6-bc15a4261bd5",
+              "statefulMarker": "GAeJxjzZpzAx7hfu7kNuIxq8cCciFy343rw2GvxXcqLzjNTSmpq5NefaL0Uq0vYMZSla8CchPVlSvD8BhaFzhhhuEiIyOhWZZLjHURCXdUnxpjYgixiR/ukKCTPswN4ULgwHdODIAPAnQjAH9LFL5gsrv5jtgP4+PR0lhRcY9mSQ81rSaspdt3vwT8NA0TdmnvTz4tLT/5VG8HVy41P0+J0PXPIzTsT8KNoLH6PhTqgU6EVVdU4DS+MEJ0oRH9cjOtkK6I8ZXcx1NByRi6Nvj1bPT4oEko3mTPR9MgKefU5OIyYbhgA7AAU9H3UDzS7fVxjhKLpYpGs1yCyqQwyiedqjOnZAd1Ll8cBIMQyca/6D2bgLF3V9tX9AY4fNrxig/L9eEi0i5SFxKfqVdJkN4xBhIH3SKbGN9AHZh1tMUYnyCEOzgD4+lq5l142EASMVu4vEkLBf+Gdoud8MnLMeKS+11pumX5pcbz7kn7zOlIAViw==",
+              "timestamp": 1792766338654,
+              "phase": "commentary",
+              "modelId": "gpt-6-luna",
+              "originApi": "responses"
+            },
+            {
+              "response": "- **الدول المطابقة لـ «guinea»**: غينيا، غينيا بيساو، غينيا الاستوائية، بابوا غينيا الجديدة.\n- **الأردن**:\n  - العملة: الدينار الأردني (JOD)، رمزه د.ا\n  - اللغة: العربية\n  - الدول المجاورة: العراق، إسرائيل، فلسطين، السعودية، سوريا\n  - العلم: 🇯🇴 [عرض العلم](https://flagcdn.com/w320/jo.png)",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "0cb95794-efe2-4e9f-8f96-53a4284c3cee",
+              "statefulMarker": "t6bgfnc1yzK6rUVi0xtpj6A2OXnsSpXXyuMuG56Txcp7vMa6PnqVZ/4/qMdcxK4cS5UDa6b5Zil7C022CNdNpFaqs3BpfbdrkLm/vfHaPFoV/oDOiFpsV2/kGl+1Wmqcd+zIZub0970ylQ6CrrUnNl84n+pW+e5edKDT+JcOiXx9EEf4eVxfEFRhOJINJlajKe20mSfUXs1IYtzOHNZ9QzB1cu6+7gwFHhU6qpE8/pvtq8cHvE7mHFvtgJMW2tBXDnFDGUAWTMwDfAF5GYbYvPqhWXUSLuvyNuc3s/VU4pMOBeNfxWlvl7oAcgCnQBVXVtlQZALsgwF/T9RdQA16E4w6m8hyXQ6baeCIXTCYU6NMQWPVd1qBVc9mKlhudc1zrhvA0qVP2+/S+iatvDF4sQSaIaRxaQrO0R1DEM8CoQDSqcqVWMqSyABeshFacXhjb3Fqmvzd6q4XXsA8Pp0U6kq4rdtIwmwO6ZpJyScMn7TlXA==",
+              "timestamp": 1792766355510,
+              "phase": "final_answer",
+              "modelId": "gpt-6-luna",
+              "originApi": "responses"
+            }
+          ],
+          "toolCallResults": {
+            "call_26nJlihD5fQsiDsNFkLf3t5p__vscode-1792766299185": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 21,
+                  "value": "[\"mcp_data-explorer_search_countries\",\"mcp_data-explorer_get_country_details\",\"search_workspace_symbols\",\"vscode_get_confirmation_with_options\",\"vscode_reviewPlan\"]"
+                }
+              ]
+            },
+            "call_RRpD0Il3xYpnjqqCoQRA7ZVB__vscode-1792766299186": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 21,
+                  "value": "{\"result\":[{\"name\":\"Guinea\",\"capital\":\"Conakry\",\"region\":\"Africa\",\"population\":null},{\"name\":\"Guinea-Bissau\",\"capital\":\"Bissau\",\"region\":\"Africa\",\"population\":null},{\"name\":\"Equatorial Guinea\",\"capital\":\"Ciudad de la Paz\",\"region\":\"Africa\",\"population\":null},{\"name\":\"Papua New Guinea\",\"capital\":\"Port Moresby\",\"region\":\"Oceania\",\"population\":null}]}"
+                }
+              ]
+            },
+            "call_t8ZZsxM8BgqiST8weamMKtch__vscode-1792766299187": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 21,
+                  "value": "{\n  \"name\": \"Jordan\",\n  \"official_name\": \"Hashemite Kingdom of Jordan\",\n  \"capital\": \"Amman\",\n  \"region\": \"Asia\",\n  \"currencies\": [\n    {\n      \"code\": \"JOD\",\n      \"name\": \"Jordanian dinar\",\n      \"symbol\": \"د.ا\"\n    }\n  ],\n  \"languages\": [\n    \"Arabic\"\n  ],\n  \"borders\": [\n    \"IRQ\",\n    \"ISR\",\n    \"PSE\",\n    \"SAU\",\n    \"SYR\"\n  ],\n  \"flag_url\": \"https://flagcdn.com/w320/jo.png\",\n  \"flag_emoji\": \"🇯🇴\",\n  \"source\": \"mledoze/countries (no API key set)\"\n}"
+                }
+              ]
+            }
+          },
+          "resolvedModel": "gpt-6-luna",
+          "modelMessageId": "1160dd5b-6bc8-41ce-84d4-8ccdc04c2b59",
+          "responseId": "ae6074d4-a9d9-4a2f-9116-68219a281f03",
+          "sessionId": "7aacfbfe-6a21-46e9-9d54-43e2e3b18043",
+          "agentId": "github.copilot.editsAgent"
+        },
+        "details": "GPT-6 Luna • 0.3 credits"
+      },
+      "responseMarkdownInfo": [],
+      "followups": [],
+      "modelState": {
+        "value": 1,
+        "completedAt": 1792766355727
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "external": "vscode://settings/github.copilot.chat.codeGeneration.instructions",
+            "path": "/github.copilot.chat.codeGeneration.instructions",
+            "scheme": "vscode",
+            "authority": "settings"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "responseTimestamp": 1792766301860,
+      "timeSpentWaiting": 20882,
+      "promptTokens": 18761,
+      "completionTokens": 299,
+      "outputBuffer": 128000,
+      "promptTokenDetails": [
+        {
+          "category": "System",
+          "label": "System Instructions",
+          "percentageOfPrompt": 41
+        },
+        {
+          "category": "System",
+          "label": "Tool Definitions",
+          "percentageOfPrompt": 52
+        },
+        {
+          "category": "User Context",
+          "label": "Messages",
+          "percentageOfPrompt": 6
+        },
+        {
+          "category": "User Context",
+          "label": "Tool Results",
+          "percentageOfPrompt": 2
+        }
+      ],
+      "copilotCredits": 0.304292,
+      "elapsedMs": 32985
+    },
+    {
+      "requestId": "request_246987a7-7f51-4f43-839d-2c158ccf6338",
+      "message": {
+        "parts": [
+          {
+            "range": {
+              "start": 0,
+              "endExclusive": 142
+            },
+            "editorRange": {
+              "startLineNumber": 1,
+              "startColumn": 1,
+              "endLineNumber": 1,
+              "endColumn": 143
+            },
+            "text": "Answer in English. Now call get_country_details with the name \"12345\", then with \"Atlantis\", and show me the raw JSON each tool call returned.",
+            "kind": "text"
+          }
+        ],
+        "text": "Answer in English. Now call get_country_details with the name \"12345\", then with \"Atlantis\", and show me the raw JSON each tool call returned."
+      },
+      "variableData": {
+        "variables": []
+      },
+      "response": [
+        {
+          "kind": "mcpServersStarting",
+          "didStartServerIds": []
+        },
+        {
+          "kind": "thinking",
+          "value": [],
+          "id": "rCj2MyGzsmNjFyz6KmbbXWZvUCHFDy5EB6AD6v9fZCjzTw3FQuped8OQB3b79rEhfhakdtFCK9/UG+yZY3gWC6xdIUM7Q34KPf5VHhPi6QqjJryG4j4t20C4lzvVYS1OAFWPOrsZqT29gqErZoGhU+m9PXqKR2LsQAwQz+OQDZKzD3QzaaERYjBPEUP9V2HD5wBXLKmTk83RRjfCpLbqtxiAT4ID56d1T4gfB92QCAt/kfT05NW9b0uRhjo9L1N4DdAiVPSTlaSErgmeCn0D8xdvJM5ACbn1dK/sBD7T3j1lAofrsZp56ZQjAWFUm4K6w78lZOa+/xFVMzRKUs+8pWsM1u0DH6LCofJkbai7hUCx0jpWqA98on7jRuoCq89VUWogtgUbAVELBBY9mGK+IQwxJJ9dXuAYefX0h6aMh9C+vw+dTT1kl01KFOGwi29KYxi6BqzgTJCJqWPpCfD1RUjA3upVPkEPCxo15/pDNIs="
+        },
+        {
+          "kind": "thinking",
+          "value": "",
+          "id": "",
+          "metadata": {
+            "vscodeReasoningDone": true,
+            "stopReason": "text"
+          }
+        },
+        {
+          "value": "I’ll call the country-details tool for each name and preserve the returned JSON exactly.",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/workspaces/AI-Augmented-Software-Engineering/",
+            "scheme": "vscode-remote",
+            "authority": "codespaces+animated-goldfish-6v466jj4q67h57gv"
+          }
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "جارٍ تنفيذ `get_country_details`",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "pastTenseMessage": {
+            "value": "تم تنفيذ `get_country_details` ",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "originMessage": "data-explorer (خادم MCP)",
+          "isConfirmed": {
+            "type": 3,
+            "scope": "session"
+          },
+          "isComplete": true,
+          "source": {
+            "type": "mcp",
+            "serverLabel": "data-explorer",
+            "label": "data-explorer",
+            "collectionId": "mcp.config.ws0",
+            "definitionId": "mcp.config.ws0.data-explorer"
+          },
+          "icon": {
+            "id": "tools"
+          },
+          "resultDetails": {
+            "input": "{\n  \"name\": \"12345\"\n}",
+            "output": [
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "{\n  \"error\": \"name may only contain letters, spaces and . ' - ( ) , &\",\n  \"error_type\": \"invalid_input\"\n}"
+              }
+            ],
+            "isError": false
+          },
+          "toolSpecificData": {
+            "kind": "input",
+            "rawInput": {
+              "name": "12345"
+            }
+          },
+          "toolCallId": "call_iWjCZez127a89EqRg5mnyzrZ",
+          "toolId": "mcp_data-explorer_get_country_details"
+        },
+        {
+          "kind": "toolInvocationSerialized",
+          "invocationMessage": {
+            "value": "جارٍ تنفيذ `get_country_details`",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "pastTenseMessage": {
+            "value": "تم تنفيذ `get_country_details` ",
+            "isTrusted": false,
+            "supportThemeIcons": false,
+            "supportHtml": false,
+            "supportAlertSyntax": false
+          },
+          "originMessage": "data-explorer (خادم MCP)",
+          "isConfirmed": {
+            "type": 3,
+            "scope": "session"
+          },
+          "isComplete": true,
+          "source": {
+            "type": "mcp",
+            "serverLabel": "data-explorer",
+            "label": "data-explorer",
+            "collectionId": "mcp.config.ws0",
+            "definitionId": "mcp.config.ws0.data-explorer"
+          },
+          "icon": {
+            "id": "tools"
+          },
+          "resultDetails": {
+            "input": "{\n  \"name\": \"Atlantis\"\n}",
+            "output": [
+              {
+                "type": "embed",
+                "isText": true,
+                "value": "{\n  \"error\": \"no country found matching 'Atlantis'; try search_countries to find the exact name\",\n  \"error_type\": \"not_found\"\n}"
+              }
+            ],
+            "isError": false
+          },
+          "toolSpecificData": {
+            "kind": "input",
+            "rawInput": {
+              "name": "Atlantis"
+            }
+          },
+          "toolCallId": "call_oi8FhZWl2yDbcACSAdjWm2Zl",
+          "toolId": "mcp_data-explorer_get_country_details"
+        },
+        {
+          "value": "**`name: \"12345\"`**\n```json\n{\n  \"error\": \"name may only contain letters, spaces and . ' - ( ) , &\",\n  \"error_type\": \"invalid_input\"\n}\n```\n\n**`name: \"Atlantis\"`**\n```json\n{\n  \"error\": \"no country found matching 'Atlantis'; try search_countries to find the exact name\",\n  \"error_type\": \"not_found\"\n}\n```",
+          "supportThemeIcons": false,
+          "supportHtml": false,
+          "baseUri": {
+            "$mid": 1,
+            "path": "/workspaces/AI-Augmented-Software-Engineering/",
+            "scheme": "vscode-remote",
+            "authority": "codespaces+animated-goldfish-6v466jj4q67h57gv"
+          }
+        }
+      ],
+      "agent": {
+        "extensionId": {
+          "value": "GitHub.copilot-chat",
+          "_lower": "github.copilot-chat"
+        },
+        "extensionVersion": "0.71.0",
+        "publisherDisplayName": "GitHub",
+        "extensionPublisherId": "GitHub",
+        "extensionDisplayName": "GitHub Copilot",
+        "id": "github.copilot.editsAgent",
+        "description": "Edit files in your workspace in agent mode",
+        "when": "config.chat.agent.enabled",
+        "metadata": {
+          "themeIcon": {
+            "id": "tools"
+          },
+          "hasFollowups": false,
+          "supportIssueReporting": false
+        },
+        "name": "agent",
+        "fullName": "GitHub Copilot",
+        "isDefault": true,
+        "locations": [
+          "panel"
+        ],
+        "modes": [
+          "agent"
+        ],
+        "slashCommands": [
+          {
+            "name": "compact",
+            "description": "Free up context by compacting the conversation history. Optionally include extra instructions for compaction."
+          },
+          {
+            "name": "explain",
+            "description": "Explain how the code in your active editor works"
+          },
+          {
+            "name": "tests",
+            "description": "Generate unit tests for the selected code",
+            "disambiguation": [
+              {
+                "category": "create_tests",
+                "description": "The user wants to generate unit tests.",
+                "examples": [
+                  "Generate tests for my selection using pytest."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "fix",
+            "description": "Propose a fix for the problems in the selected code",
+            "sampleRequest": "There is a problem in this code. Rewrite the code to show it with the bug fixed."
+          },
+          {
+            "name": "new",
+            "description": "Scaffold code for a new file or project in a workspace",
+            "sampleRequest": "Create a RESTful API server using typescript",
+            "isSticky": true,
+            "disambiguation": [
+              {
+                "category": "create_new_workspace_or_extension",
+                "description": "The user wants to create a complete Visual Studio Code workspace from scratch, such as a new application or a Visual Studio Code extension. Use this category only if the question relates to generating or creating new workspaces in Visual Studio Code. Do not use this category for updating existing code or generating sample code snippets",
+                "examples": [
+                  "Scaffold a Node server.",
+                  "Create a sample project which uses the fileSystemProvider API.",
+                  "react application"
+                ]
+              }
+            ]
+          },
+          {
+            "name": "newNotebook",
+            "description": "Create a new Jupyter Notebook",
+            "sampleRequest": "How do I create a notebook to load data from a csv file?",
+            "disambiguation": [
+              {
+                "category": "create_jupyter_notebook",
+                "description": "The user wants to create a new Jupyter notebook in Visual Studio Code.",
+                "examples": [
+                  "Create a notebook to analyze this CSV file."
+                ]
+              }
+            ]
+          },
+          {
+            "name": "setupTests",
+            "description": "Set up tests in your project (Experimental)",
+            "sampleRequest": "add playwright tests to my project",
+            "when": "config.github.copilot.chat.setupTests.enabled",
+            "disambiguation": [
+              {
+                "category": "set_up_tests",
+                "description": "The user wants to configure project test setup, framework, or test runner. The user does not want to fix their existing tests.",
+                "examples": [
+                  "Set up tests for this project."
+                ]
+              }
+            ]
+          }
+        ],
+        "disambiguation": []
+      },
+      "timestamp": 1792766373286,
+      "modelId": "copilot/auto",
+      "modelConfiguration": {
+        "tier": "balance",
+        "tierSource": "default"
+      },
+      "modeInfo": {
+        "kind": "agent",
+        "isBuiltin": true,
+        "telemetryModeId": "agent",
+        "telemetryModeName": "agent",
+        "permissionLevel": "default"
+      },
+      "responseId": "response_a3cb0fb8-9de0-43fc-89b8-b5a3a83ce695",
+      "result": {
+        "timings": {
+          "firstProgress": 5167,
+          "totalElapsed": 9040
+        },
+        "metadata": {
+          "codeBlocks": [
+            {
+              "code": "{\n  \"error\": \"name may only contain letters, spaces and . ' - ( ) , &\",\n  \"error_type\": \"invalid_input\"\n}\n",
+              "language": "json",
+              "markdownBeforeBlock": "**`name: \"12345\"`**\n"
+            },
+            {
+              "code": "{\n  \"error\": \"no country found matching 'Atlantis'; try search_countries to find the exact name\",\n  \"error_type\": \"not_found\"\n}\n",
+              "language": "json",
+              "markdownBeforeBlock": "\n**`name: \"Atlantis\"`**\n"
+            }
+          ],
+          "renderedUserMessage": [
+            {
+              "type": 1,
+              "text": "<context>\nThe current date is 2026-10-23.\nTerminals:\nTerminal: bash\n<customizationsUpdate>\nThe available instructions, skills, and agents have changed since this conversation started. The listings below supersede the ones in the system prompt.\n<skills>\nHere is a list of skills that contain domain specific knowledge on a variety of topics.\nEach skill comes with a description of the topic and a file path that contains the detailed instructions.\nWhen a user asks you to perform a task that falls within the domain of a skill, use the 'read_file' tool to acquire the full instructions from the file URI.\n<skill>\n<name>summarize-github-issue-pr-notification</name>\n<description>Summarizes the content of a GitHub issue, pull request (PR), or notification, providing a concise overview of the main points and key details. ALWAYS use the skill when asked to summarize an issue, PR, or notification.</description>\n<file>/home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.172.0/src/lm/skills/summarize-github-issue-pr-notification/SKILL.md</file>\n</skill>\n<skill>\n<name>suggest-fix-issue</name>\n<description>Given the details of an issue, suggests a fix for the issue.</description>\n<file>/home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.172.0/src/lm/skills/suggest-fix-issue/SKILL.md</file>\n</skill>\n<skill>\n<name>form-github-search-query</name>\n<description>Forms a GitHub search query based on a natural language query and the type of search (issue or PR). This skill helps users create effective search queries to find relevant issues or pull requests on GitHub.</description>\n<file>/home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.172.0/src/lm/skills/form-github-search-query/SKILL.md</file>\n</skill>\n<skill>\n<name>show-github-search-result</name>\n<description>Summarizes the results of a GitHub search query in a human friendly markdown table that is easy to read and understand. ALWAYS use this skill when displaying the results of a GitHub search query.</description>\n<file>/home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.172.0/src/lm/skills/show-github-search-result/SKILL.md</file>\n</skill>\n<skill>\n<name>address-pr-comments</name>\n<description>Address review comments (including Copilot comments) on the active pull request. Use when: responding to PR feedback, fixing review comments, resolving PR threads, implementing requested changes from reviewers, addressing code review, fixing PR issues.</description>\n<file>/home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.172.0/src/lm/skills/address-pr-comments/SKILL.md</file>\n</skill>\n<skill>\n<name>create-pull-request</name>\n<description>Create a GitHub Pull Request from the current or specified branch. Use when: opening a PR, submitting code for review, creating a draft PR, publishing a branch as a pull request, proposing changes to a repository.</description>\n<file>/home/codespace/.vscode-remote/extensions/github.vscode-pull-request-github-0.172.0/src/lm/skills/create-pull-request/SKILL.md</file>\n</skill>\n<skill>\n<name>project-setup-info-local</name>\n<description>Comprehensive setup steps to help the user create complete project structures in a VS Code workspace; this tool is designed for full project initialization and scaffolding, not for creating individual files. When to use this tool: user wants to create a new complete project from scratch; setting up entire project frameworks (TypeScript projects, React apps, Node.js servers, etc.); initializing Model Context Protocol (MCP) servers with full structure; creating VS Code extensions with proper scaffolding; setting up Next.js, Vite, or other framework-based projects; user asks for \"new project\", \"create a workspace\", \"set up a [framework] project\"; need to establish a complete development environment with dependencies, config files, and folder structure. When NOT to use this tool: creating single files or small code snippets; adding individual files to existing projects; making modifications to existing codebases; user asks to \"create a file\" or \"add a component\"; simple code examples or demonstrations; debugging </description>\n<file>/vscode/bin/linux-x64/e646868227c3e3a9e3f24277c8c7220be42c0be7/extensions/copilot/assets/prompts/skills/project-setup-info-local/SKILL.md</file>\n</skill>\n<skill>\n<name>get-search-view-results</name>\n<description>Get the current search results from the Search view in VS Code</description>\n<file>/vscode/bin/linux-x64/e646868227c3e3a9e3f24277c8c7220be42c0be7/extensions/copilot/assets/prompts/skills/get-search-view-results/SKILL.md</file>\n</skill>\n<skill>\n<name>agent-customization</name>\n<description>**WORKFLOW SKILL** — Create, update, review, fix, or debug VS Code agent customization files (.instructions.md, .prompt.md, .agent.md, SKILL.md, copilot-instructions.md, AGENTS.md). USE FOR: saving coding preferences; troubleshooting why instructions/skills/agents are ignored or not invoked; configuring applyTo patterns; defining tool restrictions; creating custom agent modes or specialized workflows; packaging domain knowledge; fixing YAML frontmatter syntax. DO NOT USE FOR: general coding questions (use default agent); runtime debugging or error diagnosis; MCP server configuration (use MCP docs directly); VS Code extension development. INVOKES: file system tools (read/write customization files), ask-questions tool (interview user for requirements), subagents for codebase exploration. FOR SINGLE OPERATIONS: For quick YAML frontmatter fixes or creating a single file from a known pattern, edit the file directly — no skill needed.</description>\n<file>/vscode/bin/linux-x64/e646868227c3e3a9e3f24277c8c7220be42c0be7/extensions/copilot/assets/prompts/skills/agent-customization/SKILL.md</file>\n</skill>\n<skill>\n<name>chronicle</name>\n<description>Analyze Copilot session history for standup reports, usage tips, session search, and session reindexing. Use when the user asks for a standup, daily summary, usage tips, workflow recommendations, wants to search or find past sessions by keyword/file/PR, wants to reindex their session store, or asks about deleting session data.</description>\n<file>/vscode/bin/linux-x64/e646868227c3e3a9e3f24277c8c7220be42c0be7/extensions/copilot/assets/prompts/skills/chronicle/SKILL.md</file>\n</skill>\n</skills>\n\n\n<agents>\nHere is a list of agents that can be used when running a subagent.\nEach agent has optionally a description with the agent's purpose and expertise. When asked to run a subagent, choose the most appropriate agent from this list.\nUse the 'runSubagent' tool with the agent name to run the subagent.\n</agents>\n\n\n</customizationsUpdate>\n\n</context>\n<reminderInstructions>\nYou are an agent—keep going until the user's query is completely resolved before ending your turn. ONLY stop if solved or genuinely blocked.\nTake action when possible; the user expects you to do useful work without unnecessary questions.\nAfter any parallel, read-only context gathering, give a concise progress update and what's next.\nAvoid repetition across turns: don't restate unchanged plans or sections (like the todo list) verbatim; provide delta updates or only the parts that changed.\nTool batches: You MUST preface each batch with a one-sentence why/what/outcome preamble.\nProgress cadence: After 3 to 5 tool calls, or when you create/edit > ~3 files in a burst, report progress.\nRequirements coverage: Read the user's ask in full and think carefully. Do not omit a requirement. If something cannot be done with available tools, note why briefly and propose a viable alternative.\n\nIMPORTANT: Before calling any deferred tool that was not previously returned by tool_search, you MUST first use tool_search to load it. Calling a deferred tool without first loading it will fail. Tools returned by tool_search are automatically expanded and immediately available - do not search for them again.\n\n</reminderInstructions>\n<userRequest>\nAnswer in English. Now call get_country_details with the name \"12345\", then with \"Atlantis\", and show me the raw JSON each tool call returned.\n</userRequest>\n"
+            },
+            {
+              "type": 3,
+              "cacheType": "ephemeral"
+            }
+          ],
+          "promptTokens": 21156,
+          "outputTokens": 97,
+          "toolCallRounds": [
+            {
+              "response": "I’ll call the country-details tool for each name and preserve the returned JSON exactly.",
+              "toolCalls": [
+                {
+                  "id": "call_iWjCZez127a89EqRg5mnyzrZ__vscode-1792766299188",
+                  "name": "mcp_data-explorer_get_country_details",
+                  "arguments": "{\"name\":\"12345\"}"
+                },
+                {
+                  "id": "call_oi8FhZWl2yDbcACSAdjWm2Zl__vscode-1792766299189",
+                  "name": "mcp_data-explorer_get_country_details",
+                  "arguments": "{\"name\":\"Atlantis\"}"
+                }
+              ],
+              "toolInputRetry": 0,
+              "id": "41f710fc-3d35-43be-8da0-9d2bfe1c7b36",
+              "statefulMarker": "jAOA9ho053ghyIbP970O6VnZVnr8V8Mnq6v3ouh3dpUQc1Ydq0NYyEVpKChyU1h8HEPHaY607pxThrZFuZsPbY19VswQA8AC/QcHJ5yIaQi2lfuWQ87l2XirVKW/fUmaBnhCGx9gRh6Agq4AlkgYWOOxS/oPPH7gY/nEv0i3jk3vg1IGRht91Di+77+VUVpxQ8xtLMdPHBg7KjgCtnGnbr+3c+o5GU53QeiHtLccKyUmz1tLA2XvXKktMfw7hIqGWgf466n2lI/BtQtgzmnGnvdBPOSQdmbbgsiwpTNyt3FMcBbMVSeIOf3Xudzqjd3pb43KfoPylVeBMXK7CZ7SFEISpi6upcAYuwqHAEl7TsuNEFFDcrB+8bOvjcmSwsVjdipP6H13PCBhbE4VKlm0SIZIH9TScIiJH0jqghQaVuchRY/9WEQDkzgxh9zQCLK9i7Y6HuGRv0/lp6mNf0WRqXZsUFXlncBUiME9EdDmkvahuw==",
+              "thinking": {
+                "id": "rCj2MyGzsmNjFyz6KmbbXWZvUCHFDy5EB6AD6v9fZCjzTw3FQuped8OQB3b79rEhfhakdtFCK9/UG+yZY3gWC6xdIUM7Q34KPf5VHhPi6QqjJryG4j4t20C4lzvVYS1OAFWPOrsZqT29gqErZoGhU+m9PXqKR2LsQAwQz+OQDZKzD3QzaaERYjBPEUP9V2HD5wBXLKmTk83RRjfCpLbqtxiAT4ID56d1T4gfB92QCAt/kfT05NW9b0uRhjo9L1N4DdAiVPSTlaSErgmeCn0D8xdvJM5ACbn1dK/sBD7T3j1lAofrsZp56ZQjAWFUm4K6w78lZOa+/xFVMzRKUs+8pWsM1u0DH6LCofJkbai7hUCx0jpWqA98on7jRuoCq89VUWogtgUbAVELBBY9mGK+IQwxJJ9dXuAYefX0h6aMh9C+vw+dTT1kl01KFOGwi29KYxi6BqzgTJCJqWPpCfD1RUjA3upVPkEPCxo15/pDNIs=",
+                "text": [],
+                "encrypted": "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",
+                "tokens": 169
+              },
+              "timestamp": 1792766379533,
+              "phase": "commentary",
+              "modelId": "gpt-6-luna",
+              "originApi": "responses"
+            },
+            {
+              "response": "**`name: \"12345\"`**\n```json\n{\n  \"error\": \"name may only contain letters, spaces and . ' - ( ) , &\",\n  \"error_type\": \"invalid_input\"\n}\n```\n\n**`name: \"Atlantis\"`**\n```json\n{\n  \"error\": \"no country found matching 'Atlantis'; try search_countries to find the exact name\",\n  \"error_type\": \"not_found\"\n}\n```",
+              "toolCalls": [],
+              "toolInputRetry": 0,
+              "id": "06b89dfd-7b4b-46b0-addb-70736c6ba533",
+              "statefulMarker": "WVuUvrU36iVCKYr6mUwonAAEEJaWODfA5k0INUSf671l5E2G+hroXIo+D8FuoPaQ0GRToo3klIqICqs8CJ6dA4KeLscv43XIG2CsxYhaUJXlHQugGuMV4U+VA6bGevg4EZel9UxtN9CviSPJizOXuV5PCX8sOqhxVf1Hgm+G6Y45zFq7QNE6TWBLUkhiepaGkEpgya1eHpgN5rj8XzivaC2ExaXvA2e3tbncwAS9XogrtjF3lk4wqxoO31sg9wX6qR9nD5/bvFefcb6NwWsPTx1IpRq605SJaRxPO1NuLK/YKYBdjGUultqHCEBY9JV0eMnQMgdethJKzyWWVZf+v+8ydTWOdK9Ld1ykKa9AwZbGoeb1CP2mEyTJ1GUJSFwM/qEeVOSZoHg5cSH4nKV2o632VZjl+rq651tws2Skv9Ezwea/DHD9RJei8/mO4fAMWq9sRc72QeOCMRJbMHZgyA0aAG3vPo+G1AOI+MZUkqRqVw==",
+              "timestamp": 1792766382570,
+              "phase": "final_answer",
+              "modelId": "gpt-6-luna",
+              "originApi": "responses"
+            }
+          ],
+          "toolCallResults": {
+            "call_iWjCZez127a89EqRg5mnyzrZ__vscode-1792766299188": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 21,
+                  "value": "{\n  \"error\": \"name may only contain letters, spaces and . ' - ( ) , &\",\n  \"error_type\": \"invalid_input\"\n}"
+                }
+              ]
+            },
+            "call_oi8FhZWl2yDbcACSAdjWm2Zl__vscode-1792766299189": {
+              "$mid": 20,
+              "content": [
+                {
+                  "$mid": 21,
+                  "value": "{\n  \"error\": \"no country found matching 'Atlantis'; try search_countries to find the exact name\",\n  \"error_type\": \"not_found\"\n}"
+                }
+              ]
+            }
+          },
+          "resolvedModel": "gpt-6-luna",
+          "modelMessageId": "d4705c22-4221-4a68-8a8c-7b9dc680db79",
+          "responseId": "d37eca67-5d43-49e9-93e9-a479d5fea93a",
+          "sessionId": "7aacfbfe-6a21-46e9-9d54-43e2e3b18043",
+          "agentId": "github.copilot.editsAgent"
+        },
+        "details": "GPT-6 Luna • 0.1 credits"
+      },
+      "responseMarkdownInfo": [
+        {
+          "suggestionId": "sgt-3b5abd52-a5e1-4e48-87f4-5ef65f6b8776"
+        },
+        {
+          "suggestionId": "sgt-099369fb-db20-4874-a767-6dad8644da8b"
+        }
+      ],
+      "followups": [],
+      "modelState": {
+        "value": 1,
+        "completedAt": 1792766382796
+      },
+      "contentReferences": [
+        {
+          "kind": "reference",
+          "reference": {
+            "$mid": 1,
+            "external": "vscode://settings/github.copilot.chat.codeGeneration.instructions",
+            "path": "/github.copilot.chat.codeGeneration.instructions",
+            "scheme": "vscode",
+            "authority": "settings"
+          }
+        }
+      ],
+      "codeCitations": [],
+      "responseTimestamp": 1792766373286,
+      "timeSpentWaiting": 0,
+      "promptTokens": 21156,
+      "completionTokens": 354,
+      "outputBuffer": 128000,
+      "promptTokenDetails": [
+        {
+          "category": "System",
+          "label": "System Instructions",
+          "percentageOfPrompt": 38
+        },
+        {
+          "category": "System",
+          "label": "Tool Definitions",
+          "percentageOfPrompt": 47
+        },
+        {
+          "category": "User Context",
+          "label": "Messages",
+          "percentageOfPrompt": 12
+        },
+        {
+          "category": "User Context",
+          "label": "Tool Results",
+          "percentageOfPrompt": 2
+        }
+      ],
+      "copilotCredits": 0.091888,
+      "elapsedMs": 9510
+    }
+  ]
+}
