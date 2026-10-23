@@ -1070,3 +1070,11 @@ slot launch_slot_: id  0 | task 1166 | processing task, is_child = 0
 slot   operator(): id  0 | task 1166 | new prompt, n_ctx_slot = 4096, n_keep = 4, task.n_tokens = 262
 slot   operator(): id  0 | task 1166 | cached n_tokens = 249, memory_seq_rm [249, end)
 slot init_sampler: id  0 | task 1166 | init sampler, took 0.05 ms, tokens: text = 262, total = 262
+slot print_timing: id  0 | task 1166 | prompt eval time =    1996.53 ms /    13 tokens (  153.58 ms per token,     6.51 tokens per second)
+slot print_timing: id  0 | task 1166 |        eval time =    3595.41 ms /    19 tokens (  199.74 ms per token,     5.01 tokens per second)
+slot print_timing: id  0 | task 1166 |       total time =    5591.94 ms /    32 tokens
+slot print_timing: id  0 | task 1166 |    graphs reused =       1112
+slot print_timing: id  0 | task 1166 |   graph reallocs =          0    /     0        (same size) / (changed size)
+slot      release: id  0 | task 1166 | stop processing: n_tokens = 280, truncated = 0
+srv  update_slots: all slots are idle
+[GIN] 2026/10/23 - 14:41:29 | 200 |    5.59s |       127.0.0.1 | POST     "/api/chat"

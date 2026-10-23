@@ -18,3 +18,7 @@ tool result: shipped, arriving Friday
 [FAIL] "What's your CEO's home address?" -> 'i can’t provide that information. is there anything else i can help you with?'
 2/3 correct
 ### rag (prompt kept, retriever returns ALL chunks)
+[PASS] 'How long do I have to return an item?' -> 'you may return most items within 30 days of delivery for a full refund.'
+[PASS] 'Do you ship internationally?' -> 'yes, we offer international shipping to most countries, and delivery takes 7-21 '
+[PASS] "What's your CEO's home address?" -> "i'm sorry, i don't know the answer to that based on our help center."
+3/3 correct
