@@ -1,0 +1,3 @@
+>>> Installing ollama to /usr/local
+>>> Downloading ollama-linux-amd64.tar.zst
+#=#=#                                                                                                                                                     0.7%#                                                                          2.1%##                                                                         4.1%####                                                                       6.1%######                                                                     8.8%########                                                                  11.5%

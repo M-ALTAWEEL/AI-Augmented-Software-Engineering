@@ -1,0 +1,8 @@
+d2aa453 Week 3: prompting techniques (k-shot, CoT, tool calling, RAG)
+fcbd71b Week 5: Data Explorer MCP server with get_country_details
+7b2d2a2 Week 4: agent-ready link shortener with click counter
+65ee75c Week 5: note that mcp 2.x breaks the FastMCP starter
+a68d75c Add files via upload
+e20240d Add files via upload
+3f77713 Add sprint task specifications doc
+a3bef10 Add the course website link to the README.
