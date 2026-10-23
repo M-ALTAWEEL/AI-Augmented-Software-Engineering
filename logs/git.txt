@@ -1,8 +1,8 @@
-92c41b4 Week 3: prompting techniques (k-shot, CoT, tool calling, RAG)
-e81a8f6 Week 5: Data Explorer MCP server with get_country_details
-d60ba3f Week 4: agent-ready link shortener with click counter
-73dfe82 Week 5: note that mcp 2.x breaks the FastMCP starter
-e713480 Add files via upload
-64d4601 logs
-3852890 Add files via upload
-62374ce logs
+33c5169 Week 3: prompting techniques (k-shot, CoT, tool calling, RAG)
+d3ce733 Week 5: Data Explorer MCP server with get_country_details
+6c10ef8 Week 4: agent-ready link shortener with click counter
+40ab991 Week 5: warn that REST Countries v3.1 is retired and mcp 2.x breaks the starter
+400346f Add files via upload
+50f55ce logs
+2d6e829 Agent host session 2120917f-f110-44e7-8775-45eb24fb829d - turn 2
+8fec99f Agent host session 2120917f-f110-44e7-8775-45eb24fb829d - turn 2 start

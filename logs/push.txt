@@ -1,0 +1,12 @@
+== improve-week5-mcp-pin:  1 file changed, 24 insertions(+)
+remote:      https://github.com/M-ALTAWEEL/AI-Augmented-Software-Engineering/pull/new/improve-week5-mcp-pin        
+remote: 
+== week3-prompting-M-ALTAWEEL:  9 files changed, 519 insertions(+)
+remote:      https://github.com/M-ALTAWEEL/AI-Augmented-Software-Engineering/pull/new/week3-prompting-M-ALTAWEEL        
+remote: 
+== week4-M-ALTAWEEL:  15 files changed, 504 insertions(+)
+remote:      https://github.com/M-ALTAWEEL/AI-Augmented-Software-Engineering/pull/new/week4-M-ALTAWEEL        
+remote: 
+== week5-M-ALTAWEEL:  6 files changed, 871 insertions(+)
+remote:      https://github.com/M-ALTAWEEL/AI-Augmented-Software-Engineering/pull/new/week5-M-ALTAWEEL        
+remote: 
