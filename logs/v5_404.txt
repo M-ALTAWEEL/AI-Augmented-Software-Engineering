@@ -1,0 +1,2 @@
+{"errors":[{"message":"Authorization key required.","code":"authKeyMissing"}]}
+HTTP 401
